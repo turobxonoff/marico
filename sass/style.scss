@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    background-color: #000000;
+}
+@mixin button {
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.btn:hover {
+    @include button;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+// Navigation menu style
+.navbar {
+    .navbar-brand {
+        color: white;
+    }
+    h3 {
+        font-weight: 700;
+    }
+    .email {
+        color: #707070;
+    }
+    img {
+        margin-top: -15px;
+    }
+    .nav-link {
+        color: #707070;
+    }
+    .navbar-nav .nav-link.active {
+        color: blue;
+    }
+    a:hover {
+        color: #FFFFFF;
+    }
+}
+
+// Home style 
+.home {
+    padding-top: 70px;
+    .headingone {
+        font-size: 80px;
+        font-weight: 900;
+    }
+    .headingtwo {
+        @extend .headingone;
+        color: #FE9B83;
+    }
+    .paragraph {
+        p {
+            color: #FFFFFF;
+            font-size: 35px;
+            font-weight: 700;
+            padding: 50px 250px 20px;
+        }
+    }
+    .buttons {
+        .btn1 {
+            color: #707070;
+        }
+    }
+    .d-flex {
+        h6 {
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        small {
+            color: #707070;
+        }
+    }
+}
+
+// Creators style
+.creators {
+    h1 {
+        font-size: 70px;
+        font-weight: 700;
+        color: #FFFFFF;
+        padding-top: 70px;
+    }
+    .col-sm-4 {
+        padding-top: 30px;
+        h3 {
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        p {
+            color: #707070;
+        }
+    }
+}
+
+// STEP 1 style
+.step1 {
+    padding-top: 100px;
+    .text {
+        h1 {
+            font-size: 70px;
+            font-weight: 700;
+            color: #FFFFFF;
+            padding-top: 10px;
+        }
+        p {
+            color: #707070;
+            font-size: 26px;
+            padding: 10px 170px;
+        }
+    }
+    .btn1 {
+        color: #707070;
+    }
+    .homepage {
+        padding: 100px 0 0 113px;
+        .headingfour {
+            font-size: 30px;
+            font-weight: 700;
+            color: #FFFFFF;
+            padding-bottom: 80px;
+        }
+        .heading1 {
+            font-size: 60px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        .heading2 {
+            @extend .heading1;
+            color {
+                color: blue;
+            }
+        }
+        p {
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+        .btn {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+// STEP 2 style
+.step2 {
+    padding-top: 100px;
+    .collect {
+        .heading1 {
+            font-size: 70px;
+            font-weight: 700;
+            color: #FFFFFF;
+            padding: 10px 0;
+        }
+        p {
+            font-size: 26px;
+            color: #707070;
+            padding: 0 170px;
+        }
+    }
+    .collect__card {
+        background-color: #0D0D0D;
+        margin-right: 10px;
+        a {
+            color: green;
+            background: transparent;
+            padding: 20px;
+            display: block;
+            font-weight: 700;
+        }
+        .heading__card1 {
+            font-weight: 700;
+            font-size: 60px;
+            color: #919191;
+            background-color: transparent;
+            margin-bottom: 0;
+            padding: 10px 20px 0;
+        }
+        .heading__card2 {
+            font-weight: 700;
+            font-size: 60px;
+            color: #FFFFFF;
+            background-color: transparent;
+            padding: 5px 20px 0;
+        }
+        img {
+            background: transparent;
+            margin: 10px 0 0 90px;
+        }
+        .heading__card3 {
+            font-weight: 700;
+            font-size: 60px;
+            color: #919191;
+            background-color: transparent;
+            margin-bottom: 0;
+            padding: 50px 200px 0 20px;
+        }
+        .heading__card4 {
+            font-weight: 700;
+            font-size: 60px;
+            color: #FFFFFF;
+            background-color: transparent;
+            padding: 0 20px ;
+        }
+    }
+    .card {
+        margin-left: 10px;
+    }
+}
+
+// STEP 3 style
+.step3 {
+    @extend .step1;
+}
+
+// Experts style
+.experts {
+    .container-fluid {
+        padding-top: 100px;
+        h1 {
+            font-size: 70px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        .img-fluid {
+            padding: 30px 20px 0;
+        }
+    }
+}
+
+// Audience style 
+.audience {
+    padding-top: 800px;
+    background-image: url('../images/Image-4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    h1 {
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        padding: 0 200px;
+        top: 350px;
+        background: transparent;
+    }
+}
+
+// Get started style
+.get_started {
+    h1 {
+        font-weight: 700;
+        font-size: 70px;
+        color: #FFFFFF;
+        padding: 10px;
+    }
+    p {
+        font-size: 26px;
+        color: #FFFFFF;
+    }
+    h6 {
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    small {
+        color: #707070;
+    }
+}
+
+// Footer style
+footer {
+    padding-top: 100px;
+}
+
+// Sign up page style
+
+// Sign up style
+.sign_up {
+    h1 {
+        font-weight: 700;
+        font-size: 70px;
+        color: #FFFFFF;
+        padding-top: 40px;
+    }
+    .home-text {
+        color: #FFFFFF;
+    }
+    form {
+        padding: 0 100px;
+        margin-top: 50px;
+        .form-control {
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+        i {
+            background: transparent;
+        }
+    }
+    i {
+        background: transparent;
+        padding: 0 10px 0 10px;
+    }
+    .fa-facebook {
+        color: blue;
+    }
+    .img-fluid {
+        background: transparent;
+    }
+    .text {
+        padding-top: 50px;
+        h2 {
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 60px;
+        }
+        p {
+            color: white;
+        }
+    }
+    .text {
+        .btn {
+            margin-top: 20px;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 50px 10px 40px;
+        }
+    }
+    .footer-text {
+        color: #FFFFFF;
+        font-weight: 700;
+        padding: 50px 0 50px;
+    }
+}
+
+// About page style
+
+// About style
+.about {
+    padding-top: 50px;
+    .navbar-brand {
+        padding-bottom: 20px;
+        h2 {
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 50px;
+            padding-top: 15px;
+        }
+    }
+    h1 {
+        font-weight: 700;
+        color: #FFFFFF;
+        font-size: 70px;
+        padding: 10px 100px 0;
+    }    
+    .text-mission {
+        font-size: 22px;
+        color: #FFFFFF;
+        padding: 0 200px;
+    }
+    .paragraph {
+        border-bottom: 1px solid #919191;
+        padding: 100px 180px 50px;
+        p {
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        .text-footer2 {
+            font-weight: 700;
+        }
+    }
+}
+
+// Team style
+.team {
+    padding: 100px 0; 
+    h1 {
+        font-size: 70px;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .col-sm-4 {
+        h2 {
+            font-weight: 700;
+            color: #FFFFFF;
+            padding-top: 10px;
+        }
+        p {
+            font-size: 20px;
+            color: #707070;
+        }
+        h5 {
+            color: #FFFFFF;
+        }
+    }
+}
+
+// Blog page style
+
+// Cards style
+.cards {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    .col-12 {
+        padding-bottom: 50px;
+        h1 {
+            font-weight: 700;
+            font-size: 70px;
+            color: #FFFFFF;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 50px;
+            color: #FFFFFF;
+        }
+        p {
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+    }
+    .card {
+        margin-top: 20px;
+        background-color: #000000;
+        border: 1px solid #707070;
+        color: #FFFFFF;
+        p {
+            margin-bottom: 0;
+        }
+        .img-fluid {
+            background: transparent;
+        }
+        .card-title {
+            color: #FFFFFF;
+            font-weight: 700;
+            margin-bottom: 0;
+            padding: 15px 0;
+        }
+        .card-text {
+            color: #707070;
+        }
+        h2 {
+            color: #FFFFFF;
+            font-weight: 700;
+            background: transparent;
+        }
+        .card-header_text {
+            color: #B4B1B1;
+            font-size: 18px;
+            background: transparent;
+        }
+        h1 {
+            font-weight: 700;
+            color: #FFFFFF;
+            background: transparent;
+        }
+        .card-title1 {
+            padding: 15px 0 55px;
+        }
+        .card-title2 {
+            padding: 10px 0 ;
+        }
+        small {
+            font-size: 18px;
+            font-weight: 200;
+            color: #707070;
+            background: transparent;
+        }
+        small1 {
+            font-size: 18px;
+            font-weight: 200;
+            color: #FFFFFF;
+            background: transparent;
+        }
+        .card-main_text1 {
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 20px;
+            background: transparent;
+        }
+        .card-main_text {
+            color: #FFFFFF;
+            padding: 10px 0;
+            background: transparent;
+        }
+        .card-main_text2 {
+            color: #B4B1B1;
+            text-align: center;
+            padding: 10px 0 20px;
+            background: transparent;
+        }
+        h5 {
+            font-weight: 700;
+            color: #FFFFFF;
+            background: transparent;
+        }
+        .card-key_text1 {
+            color: #FFFFFF;
+            padding: 10px 0;
+            background: transparent;
+        }
+        .btn {
+            padding: 15px 30px;
+            color: #FFFFFF;
+        }
+        .button {
+            background-color: #FFFFFF;
+            color: #3C82F4;
+        }
+    }
+}
+
+@media only screen and (max-width: 446.9px) {
+    .container-fluid {
+        width: 100%;
+        max-width: 447px;
+        margin: 0 auto;
+    }
+    // Home style
+    .home {
+        padding-top: 30px;
+        .headingone {
+            font-size: 40px;
+        }
+        .paragraph {
+            p {
+                padding: 0;
+                padding-top: 20px;
+                font-size: 20px;
+                text-align: left;
+            }
+        }
+        .buttons {
+            .btn {
+                margin-top: 20px;
+            }
+        }
+        .d-flex {
+            h6 {
+                font-size: 15px;
+            }
+        }
+    }
+
+    // Creators style
+    .creators {
+        h1 {
+            font-size: 40px;
+
+        }
+        .row {
+            flex-direction: column;
+        }
+    }
+
+    // STEP 1 style
+    .step1 {
+        .text {
+            h1 {
+                font-size: 40px;
+                text-align: left;
+            }
+            p {
+                padding: 0;
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+        .homepage {
+            padding: 0;
+            padding-top: 50px;
+            .headingfour {
+                font-size: 24px;
+            }
+            .heading1 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 15px;
+            }
+            .img {
+                margin-top: 20px;
+                width: 300px;
+            }
+        }
+    }
+
+    // STEP 2 style
+    .step2 {
+        .collect {
+            .heading1 {
+                font-size: 40px;
+                text-align: left;
+                padding-top: 20px;
+            }
+            p {
+                padding: 0;
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+        .collect__card {
+           margin: 20px 0;
+           a {
+                padding: 10px;
+           }
+           .heading__card1 {
+                padding: 0;
+                font-size: 35px;
+                padding-left: 10px;
+           }
+           .heading__card2 {
+                padding: 10px 10px;
+                font-size: 35px;
+           }
+           img {
+                margin: 0;
+                margin-left: 55px;
+           }
+           .heading__card3 {
+                padding: 10px;
+                font-size: 30px;
+           }
+           .heading__card4 {
+                padding: 10px;
+                font-size: 35px;
+           }
+        }
+    }
+
+    // STEP 3 style
+    .step3 {
+        @extend .step1;
+    }
+
+    // Experts style 
+    .experts {
+        .container-fluid {
+            padding-top: 50px;
+            h1 {
+                font-size: 40px;
+            }
+            .img-fluid {
+                padding: 0;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    // Audience style 
+    .audience {
+        padding-top: 300px;
+        h1 {
+            padding: 0;
+            font-size: 20px;
+            padding: 0 10px;
+            top: 120px;
+        }
+    }
+
+    // Get started style
+    .get_started {
+        h1 {
+            font-size: 30px;
+            padding-top: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+        h6 {
+            font-size: 15px;
+        }
+    }
+
+    // Footer style
+    footer {
+        .navbar-links {
+            display: flex;
+        }
+    }
+
+    // About page
+
+    // About style
+    .about {
+        h1 {
+            padding: 0;
+            font-size: 30px;
+            text-align: left;
+            padding-top: 20px;
+        }
+        .text-mission {
+            padding: 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        .paragraph {
+            padding: 10px 0 10px 10px;
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    // Team style
+    .team {
+        .col-sm-4 {
+            margin-top: 30px;
+        }
+    }
+
+    // Pricing page
+
+    // Pricing style
+    .cards {
+        .col-12 {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    // Sign up page
+
+    // sign_up style
+    .sign_up {
+        form {
+            padding: 0;
+        }
+        .text {
+            .btn {
+                padding: 10px;
+            }
+        }
+        .footer-text {
+            font-size: 15px;
+        }
+    }
+}
